@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hobbies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+  }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    h2 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .hobby-table {
+      width: 100%;
+      margin: 20px 0;
+      border-spacing: 0 10px;
+    }
+
+    .hobby-table td {
+      border: none;
+      text-align: left;
+      vertical-align: middle;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      
+    }
+
+    .hobby-table td:hover {
+      transform: scale(1.05);
+    }
+
+    .hobby-table img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .description {
+      padding-left: 20px;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+      /* Footer */
+      footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .video-section {
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    .video-section video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <div>
+          <a href="index.html">Main Menu</a>
+        </div>
+        <div>
+          <a href="myprofile.html">My Profile</a>
+          <a href="campuslife.html">Campus Life</a>
+        </div>
+    </nav>
+
+    <h2>My Hobby</h2>
+
+    <div class="content">
+        <table class="hobby-table">
+            <tr>
+                <td><img src="fortnite.jpg" alt="Gaming"></td>
+                <td class="description">🎮 Gaming – I enjoy playing Fortnite because it combines fast-paced action with creative building mechanics. The game keeps things exciting with new seasons, challenges, and skins. I love teaming up with friends and testing my reflexes and strategies in every match.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="video-section">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rhubnessvaran A/L Kelundapyan All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
